@@ -55,6 +55,14 @@ if __FILE__ == $PROGRAM_NAME
     end
   end
 
+  all_ids = 0
+  cleared_ranges.each do |range|
+    all_ids += range[1] - range[0] + 1
+  end
+
+  puts "All IDs: #{all_ids}"
+
+
   # puts "Ranges: #{ranges}"
   # puts "IDs: #{ids}"
   puts "Total: #{total}"
